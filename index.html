@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maritime Roofing Co — Halifax's Trusted Roofing Experts</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+
+    /* Nav */
+    .nav { background: #1a1a2e; padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { color: #e8c547; font-size: 20px; font-weight: 700; }
+    .nav-logo span { color: #fff; }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a { color: #ccc; font-size: 15px; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: #e8c547; }
+
+    /* Hero */
+    .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 80px 24px; text-align: center; }
+    .hero h1 { font-size: 48px; font-weight: 800; margin-bottom: 16px; max-width: 800px; margin-left: auto; margin-right: auto; }
+    .hero h2 { font-size: 22px; font-weight: 400; color: #b0b0c8; margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .hero p { font-size: 17px; color: #9090a8; margin-bottom: 36px; max-width: 650px; margin-left: auto; margin-right: auto; }
+    .btn { display: inline-block; background: #e8c547; color: #1a1a2e; padding: 14px 32px; border-radius: 6px; font-weight: 700; font-size: 16px; transition: background 0.2s; border: none; cursor: pointer; }
+    .btn:hover { background: #d4b13e; }
+    .btn-outline { background: transparent; border: 2px solid #e8c547; color: #e8c547; margin-left: 12px; }
+    .btn-outline:hover { background: #e8c547; color: #1a1a2e; }
+
+    /* Sections */
+    .section { padding: 72px 24px; max-width: 1100px; margin: 0 auto; }
+    .section-dark { background: #f4f4f8; }
+    .section-title { font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 12px; }
+    .section-subtitle { font-size: 18px; color: #666; text-align: center; margin-bottom: 48px; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+    /* Services grid */
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 28px; }
+    .service-card { background: #fff; border: 1px solid #e0e0e8; border-radius: 10px; padding: 32px 24px; }
+    .service-card h3 { font-size: 20px; margin-bottom: 12px; color: #1a1a2e; }
+    .service-card p { font-size: 15px; color: #555; line-height: 1.7; }
+
+    /* Why us */
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; text-align: center; }
+    .why-item h3 { font-size: 18px; margin-bottom: 8px; }
+    .why-item p { font-size: 14px; color: #666; }
+    .why-number { font-size: 42px; font-weight: 800; color: #e8c547; margin-bottom: 8px; }
+
+    /* Testimonials */
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .testimonial { background: #fff; border: 1px solid #e0e0e8; border-radius: 10px; padding: 28px; }
+    .testimonial blockquote { font-size: 15px; color: #444; line-height: 1.7; margin-bottom: 16px; font-style: italic; }
+    .testimonial .author { font-size: 14px; font-weight: 600; color: #1a1a2e; }
+    .testimonial .location { font-size: 13px; color: #888; }
+
+    /* Service area */
+    .area-content { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .area-content h3 { font-size: 24px; margin-bottom: 16px; }
+    .area-content p { font-size: 15px; color: #555; line-height: 1.8; margin-bottom: 16px; }
+    .area-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .area-list li { font-size: 14px; color: #444; padding: 4px 0; }
+    .area-list li::before { content: "\2713 "; color: #e8c547; font-weight: 700; }
+
+    /* CTA banner */
+    .cta-banner { background: #1a1a2e; color: #fff; padding: 64px 24px; text-align: center; }
+    .cta-banner h2 { font-size: 32px; margin-bottom: 12px; }
+    .cta-banner p { font-size: 17px; color: #b0b0c8; margin-bottom: 28px; }
+    .cta-phone { font-size: 28px; font-weight: 700; color: #e8c547; display: block; margin-bottom: 20px; }
+
+    /* Footer */
+    .footer { background: #0f0f1a; color: #888; padding: 32px 24px; text-align: center; font-size: 13px; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 32px; }
+      .area-content { grid-template-columns: 1fr; }
+      .nav-links { gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">Maritime <span>Roofing Co</span></div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Halifax's Most Trusted Roofing Contractor Since 2003</h1>
+    <h2>Residential and commercial roofing built to handle Atlantic Canada's toughest weather</h2>
+    <p>From emergency storm repairs to full roof replacements, Maritime Roofing Co has protected over 4,000 homes and businesses across Nova Scotia. We show up on time, finish on budget, and stand behind every job with our 15-year workmanship guarantee.</p>
+    <a href="contact.html" class="btn">Get a Free Roof Inspection</a>
+    <a href="services.html" class="btn btn-outline">View Our Services</a>
+  </section>
+
+  <div class="section-dark">
+    <div class="section">
+      <h2 class="section-title">Roofing Services for Every Situation</h2>
+      <p class="section-subtitle">Whether you need a quick patch or a complete tear-off and replacement, we have the crew, the materials, and the experience to get it done right the first time.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Residential Roofing</h3>
+          <p>Complete roof replacements, re-shingling, and upgrades for homes across Halifax Regional Municipality. We work with asphalt shingles, architectural shingles, metal roofing, and cedar shake to match your home's style and your budget. Every residential job includes a full attic ventilation assessment and ice dam prevention plan.</p>
+        </div>
+        <div class="service-card">
+          <h3>Commercial Roofing</h3>
+          <p>Flat roof systems, TPO membranes, EPDM rubber roofing, and built-up roofing for warehouses, retail buildings, and office complexes. Our commercial crew handles projects up to 50,000 square feet with minimal disruption to your tenants and operations. We carry $5M in commercial liability coverage.</p>
+        </div>
+        <div class="service-card">
+          <h3>Emergency Roof Repair</h3>
+          <p>When a nor'easter rips shingles off your roof at 2 AM, you need someone who answers the phone. Our emergency team responds within 4 hours across HRM with tarping, temporary sealing, and water extraction. We work directly with your insurance adjuster to streamline the claims process and get your roof sealed fast.</p>
+        </div>
+        <div class="service-card">
+          <h3>Inspections &amp; Maintenance</h3>
+          <p>Catch small problems before they become expensive ones. Our seasonal inspection program checks flashing, valleys, vents, and gutters twice a year. Maintenance customers get priority emergency service and 20% off repairs. Most roof leaks we find during inspections cost under $500 to fix — versus $8,000 or more if left until the ceiling caves in.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Why Halifax Homeowners Choose Maritime Roofing</h2>
+    <p class="section-subtitle">We are not the cheapest roofer in town, and we are not trying to be. We are the one you call when you want the job done right, on time, and without surprises on the invoice.</p>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-number">21</div>
+        <h3>Years in Business</h3>
+        <p>Founded in 2003, we have weathered every storm season alongside our customers. We are not a fly-by-night crew — we will be here when you need warranty service in 2035.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-number">4,200+</div>
+        <h3>Roofs Completed</h3>
+        <p>From bungalows in Bedford to apartment buildings in Dartmouth, every roof we install is a reference we are proud to share. Ask us for addresses — drive by and see our work yourself.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-number">15yr</div>
+        <h3>Workmanship Guarantee</h3>
+        <p>Our 15-year workmanship warranty covers labor and installation defects. That is on top of the manufacturer's material warranty. If our work fails, we fix it free. Period.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-number">4hr</div>
+        <h3>Emergency Response</h3>
+        <p>Active leak at midnight? Tree through the roof? Our emergency line is staffed 24/7 and our tarping crew deploys within 4 hours anywhere in HRM. Your insurance claim starts the moment we arrive.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-dark">
+    <div class="section">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-subtitle">We let our work speak for itself, but our customers seem to want to speak too.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <blockquote>We had three roofers quote us after Hurricane Fiona. Two never showed up. Maritime Roofing was on our roof the next morning with a tarp and had us fully re-shingled in four days. The insurance paperwork was handled before we even asked.</blockquote>
+          <div class="author">Sarah and Mike T.</div>
+          <div class="location">Eastern Passage, NS</div>
+        </div>
+        <div class="testimonial">
+          <blockquote>They replaced the flat roof on our 12-unit apartment building in Cole Harbour without a single tenant complaint. The crew was professional, cleaned up every day, and came in $2,000 under the original estimate. That never happens in construction.</blockquote>
+          <div class="author">David Chen, Property Manager</div>
+          <div class="location">Cole Harbour, NS</div>
+        </div>
+        <div class="testimonial">
+          <blockquote>I have been on their maintenance plan for six years. Last spring they caught a cracked boot around my bathroom vent that would have leaked into my attic by fall. The repair was $180. The water damage would have been thousands. Best money I spend every year.</blockquote>
+          <div class="author">Janet Morrison</div>
+          <div class="location">Bedford, NS</div>
+        </div>
+        <div class="testimonial">
+          <blockquote>Our warehouse in Burnside needed a complete TPO membrane replacement. Maritime Roofing coordinated around our shipping schedule so we never had to shut down receiving. They even fixed a drainage issue the previous roofer had ignored for years. Top-notch commercial crew.</blockquote>
+          <div class="author">Greg Patterson, Ops Director</div>
+          <div class="location">Burnside Industrial Park, Dartmouth</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Serving All of Halifax Regional Municipality</h2>
+    <p class="section-subtitle">From the tip of Sambro to the farms of Musquodoboit, our crews work across the entire HRM and beyond.</p>
+    <div class="area-content">
+      <div>
+        <h3>Local Crews, Local Knowledge</h3>
+        <p>Atlantic Canada roofing is not like roofing anywhere else. Salt air corrodes cheap fasteners. Nor'easters drive rain horizontally under flashing that would hold fine in Ontario. Freeze-thaw cycles crack rigid sealants that work perfectly in milder climates. We have been roofing in this environment for two decades, and every material choice, installation technique, and ventilation design we use is specifically selected for Maritime conditions.</p>
+        <p>Our crews live in the communities we serve. When we say we will be there at 8 AM, we mean it — because we are driving from down the road, not from a head office in Toronto. That local presence means faster emergency response, better knowledge of municipal permit requirements, and accountability you can count on. If something goes wrong with your roof, you know where to find us.</p>
+      </div>
+      <div>
+        <h3>Communities We Serve</h3>
+        <ul class="area-list">
+          <li>Halifax Peninsula</li>
+          <li>Dartmouth</li>
+          <li>Bedford</li>
+          <li>Sackville</li>
+          <li>Cole Harbour</li>
+          <li>Eastern Passage</li>
+          <li>Herring Cove</li>
+          <li>Timberlea</li>
+          <li>Fall River</li>
+          <li>Musquodoboit</li>
+          <li>Tantallon</li>
+          <li>Hammonds Plains</li>
+          <li>Porters Lake</li>
+          <li>Sambro</li>
+          <li>Waverley</li>
+          <li>Enfield</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="cta-banner" id="cta">
+    <h2>Ready to Protect Your Property?</h2>
+    <p>Get a free, no-obligation roof inspection from Halifax's most trusted roofing team. We will assess your roof's condition, identify any issues, and give you an honest recommendation — even if that means telling you it does not need replacing yet.</p>
+    <a href="tel:9024551200" class="cta-phone">(902) 455-1200</a>
+    <a href="contact.html" class="btn">Schedule Your Free Inspection</a>
+  </section>
+
+  <footer class="footer">
+    <p>Maritime Roofing Co &mdash; 47 Ochterloney Street, Dartmouth, NS B2Y 1C3 &mdash; (902) 455-1200</p>
+    <p style="margin-top: 8px;">Licensed &amp; Insured &mdash; Nova Scotia Contractor License #RF-2003-4817 &mdash; $5M Commercial Liability</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Maritime Roofing Co</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    .nav { background: #1a1a2e; padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { color: #e8c547; font-size: 20px; font-weight: 700; }
+    .nav-logo span { color: #fff; }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a { color: #ccc; font-size: 15px; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: #e8c547; }
+    .page-hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 56px 24px; text-align: center; }
+    .page-hero h1 { font-size: 42px; font-weight: 800; margin-bottom: 12px; }
+    .page-hero p { font-size: 18px; color: #b0b0c8; max-width: 650px; margin: 0 auto; }
+    .section { padding: 64px 24px; max-width: 1100px; margin: 0 auto; }
+    .contact-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #333; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 12px 14px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px;
+      font-family: inherit; background: #fff; color: #333; transition: border-color 0.2s;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: #e8c547; outline: none; }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .btn { display: inline-block; background: #e8c547; color: #1a1a2e; padding: 14px 32px; border-radius: 6px; font-weight: 700; font-size: 16px; transition: background 0.2s; border: none; cursor: pointer; width: 100%; }
+    .btn:hover { background: #d4b13e; }
+    .contact-info { background: #f4f4f8; border-radius: 10px; padding: 32px; }
+    .contact-info h3 { font-size: 20px; margin-bottom: 20px; }
+    .info-item { margin-bottom: 20px; }
+    .info-item .label { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 4px; }
+    .info-item .value { font-size: 16px; font-weight: 600; color: #1a1a2e; }
+    .info-item .value a { color: #e8c547; }
+    .hours-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; font-size: 14px; }
+    .hours-grid .day { color: #666; }
+    .hours-grid .time { color: #333; font-weight: 500; text-align: right; }
+    .emergency-box { background: #1a1a2e; color: #fff; border-radius: 8px; padding: 20px; margin-top: 24px; }
+    .emergency-box h3 { color: #e8c547; font-size: 16px; margin-bottom: 8px; }
+    .emergency-box p { font-size: 14px; color: #c0c0d8; margin-bottom: 8px; }
+    .emergency-box .phone { font-size: 22px; font-weight: 700; color: #e8c547; }
+    .section-title { font-size: 30px; font-weight: 700; text-align: center; margin-bottom: 12px; }
+    .section-subtitle { font-size: 16px; color: #666; text-align: center; margin-bottom: 40px; }
+
+    /* FAQ */
+    .faq-section { max-width: 800px; margin: 0 auto; padding: 64px 24px; }
+    .faq-item { border-bottom: 1px solid #e0e0e8; padding: 20px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h3 { font-size: 17px; font-weight: 600; margin-bottom: 8px; color: #1a1a2e; }
+    .faq-item p { font-size: 15px; color: #555; line-height: 1.7; }
+
+    .footer { background: #0f0f1a; color: #888; padding: 32px 24px; text-align: center; font-size: 13px; }
+
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .page-hero h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">Maritime <span>Roofing Co</span></div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <h1>Get in Touch With Our Roofing Team</h1>
+    <p>Whether you need a quote, want to schedule an inspection, or have an emergency, we are here to help. Fill out the form below or call us directly.</p>
+  </section>
+
+  <div class="section">
+    <div class="contact-grid">
+      <div>
+        <h2 style="font-size: 24px; margin-bottom: 8px;">Request a Free Roof Inspection</h2>
+        <p style="font-size: 15px; color: #666; margin-bottom: 24px;">Tell us about your property and we will have one of our project managers contact you within one business day to schedule your free inspection.</p>
+
+        <form action="#" method="POST" id="contact-form">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(902) 555-0123" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Property Address</label>
+            <input type="text" id="address" name="address" placeholder="123 Main Street, Halifax, NS">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option value="residential-replacement">Residential Roof Replacement</option>
+              <option value="residential-repair">Residential Roof Repair</option>
+              <option value="commercial">Commercial Roofing</option>
+              <option value="emergency">Emergency Repair</option>
+              <option value="inspection">Roof Inspection</option>
+              <option value="maintenance">Maintenance Plan</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Project</label>
+            <textarea id="message" name="message" placeholder="Describe what is happening with your roof, how old it is, the type of building, any visible damage, etc. The more detail you give us, the better prepared we will be when we arrive for the inspection."></textarea>
+          </div>
+          <button type="submit" class="btn">Submit Inspection Request</button>
+        </form>
+      </div>
+
+      <div>
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+
+          <div class="info-item">
+            <div class="label">Phone</div>
+            <div class="value"><a href="tel:9024551200">(902) 455-1200</a></div>
+          </div>
+
+          <div class="info-item">
+            <div class="label">Email</div>
+            <div class="value"><a href="mailto:info@maritimeroofing.ca">info@maritimeroofing.ca</a></div>
+          </div>
+
+          <div class="info-item">
+            <div class="label">Office Address</div>
+            <div class="value">47 Ochterloney Street<br>Dartmouth, NS B2Y 1C3</div>
+          </div>
+
+          <div class="info-item">
+            <div class="label">Business Hours</div>
+            <div class="hours-grid">
+              <span class="day">Monday - Friday</span><span class="time">7:00 AM - 6:00 PM</span>
+              <span class="day">Saturday</span><span class="time">8:00 AM - 2:00 PM</span>
+              <span class="day">Sunday</span><span class="time">Closed</span>
+            </div>
+          </div>
+
+          <div class="emergency-box">
+            <h3>Roof Emergency?</h3>
+            <p>Our emergency line is staffed 24 hours a day, 7 days a week. Active leaks, storm damage, and structural concerns are dispatched immediately.</p>
+            <a href="tel:9024551200" class="phone">(902) 455-1200</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background: #f4f4f8;">
+    <div class="faq-section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Answers to the questions we hear most from homeowners and property managers.</p>
+
+      <div class="faq-item">
+        <h3>How much does a new roof cost in Halifax?</h3>
+        <p>A complete residential roof replacement in Halifax typically ranges from $8,000 to $18,000 for a standard single-family home, depending on size, pitch, material choice, and the number of layers that need to be removed. Steep roofs, dormers, and multiple penetrations (skylights, chimneys, vents) add complexity and cost. We provide detailed written estimates broken down by line item so you know exactly what you are paying for. Our estimates are valid for 60 days and the price we quote is the price you pay — no surprise extras.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How long does a roof replacement take?</h3>
+        <p>Most residential roof replacements take two to four days from tear-off to final cleanup. A simple single-layer removal on a straightforward gable roof can be done in two days. Complex roofs with multiple layers, extensive decking repair, or difficult access may take up to a week. Weather delays are always possible in Nova Scotia — we monitor forecasts closely and will not start a tear-off if rain is expected within 48 hours. Your interior is never exposed overnight; we tarp and seal at the end of every work day.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do you handle the insurance claim?</h3>
+        <p>We do not file the claim for you — that is between you and your insurer — but we do everything else. We document the damage with photos and written descriptions, prepare a detailed scope of work in the format your insurer expects, meet with the adjuster on site, and respond to any supplemental information requests. About 80% of our insurance-related jobs are approved on first submission, and we have a 95% success rate on claims we support. We never inflate damage or recommend unnecessary work to increase a claim.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What is the best roofing material for Nova Scotia weather?</h3>
+        <p>For most residential applications, architectural asphalt shingles offer the best balance of durability, cost, and performance in our climate. Look for shingles rated to 210 km/h wind uplift and Class 4 impact resistance. Metal roofing is an excellent choice if you plan to stay in your home long term — it handles snow loads better than shingles and can last 50-plus years. We do not recommend three-tab shingles anymore; the price difference versus architectural is small but the performance gap is enormous, especially in high-wind areas along the coast.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can you work on my roof in winter?</h3>
+        <p>Yes, with some limitations. Asphalt shingles should ideally be installed above 5 degrees Celsius because the adhesive strips need warmth to seal properly. Below that temperature, we use hand-sealing techniques and specialized cold-weather adhesives, but installation takes longer and costs slightly more. Metal roofing can be installed year-round. Emergency repairs and tarping happen regardless of temperature or conditions — that is the whole point of emergency service. If your project can wait until spring without risk of further damage, we will tell you so.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Are you licensed and insured?</h3>
+        <p>Yes. We hold Nova Scotia Contractor License #RF-2003-4817, carry $5M in commercial general liability insurance, and maintain full workers compensation coverage through WorkSafeNB for every employee on every job site. We are happy to provide certificates of insurance to property managers, strata councils, or anyone else who requires them before work begins. Our insurance has never lapsed in 21 years of operation.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Maritime Roofing Co &mdash; 47 Ochterloney Street, Dartmouth, NS B2Y 1C3 &mdash; (902) 455-1200</p>
+    <p style="margin-top: 8px;">Licensed &amp; Insured &mdash; Nova Scotia Contractor License #RF-2003-4817 &mdash; $5M Commercial Liability</p>
+  </footer>
+
+</body>
+</html>
